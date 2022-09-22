@@ -77,38 +77,7 @@
       
   <!--Site verification-->
   <meta name="google-site-verification" content="google7bf6840903bc8666"/>
-  </head>
-
-<body onclick="close_fun()">
-	<div class="header-con">
-		<img class="logo" src="https://images-ext-2.discordapp.net/external/UCq7m2CdmGh9IveBdWZk8ZglLspAdCwHIjNPn_4slFk/%3Fsize%3D1024/https/cdn.discordapp.com/icons/947443790053015623/3d3d8cb1823a4a69cc5cd2014c6f6a95.png?width=461&height=461">
-		<h4>Spruce Bot</h4></div>
-		<ul class="nav-list">
-			<a href="#" style="text-decoration:none"><li>Home</li></a>
-			<a href="#" style="text-decoration:none"><li>Invite</li></a>
-			<a href="#" style="text-decoration:none"><li>Docs</li></a>
-			<a href="#" style="text-decoration:none"><li>T&C</li></a>
-			<a href="#" style="text-decoration:none"><li>Donate</li></a>
-			<a href="#" style="text-decoration:none"><li>Support</li></a>
-			<a href="#" style="text-decoration:none"><li>Privacy</li></a>
-			<a href="#" style="text-decoration:none"><li>Bug Report</li></a>
-		</ul>
-
-		<i id="menu-btn" onclick="menu_toggle()" class='bx bx-menu'></i>
-		<ul id ="menubar" class="menu-bar"><b>
-			<a href="#" style="text-decoration:none"><li>Home</li></a>
-			<a href="#" style="text-decoration:none"><li>Invite</li></a>
-			<a href="#" style="text-decoration:none"><li>Docs</li></a>
-			<a href="#" style="text-decoration:none"><li>T&C</li></a>
-			<a href="#" style="text-decoration:none"><li>Donate</li></a>
-			<a href="#" style="text-decoration:none"><li>Support</li></a>
-			<a href="#" style="text-decoration:none"><li>Privacy</li></a>
-			<a href="#" style="text-decoration:none"><li>Bug Report</li></a>
-		</ul>
-
-
-
-<style type="text/css">
+  <style type="text/css">
 body{
 	background: #383161;
 	font-family: arial;
@@ -121,7 +90,7 @@ body{
 	background: linear-gradient(#383161, #202c45);
 	height: 50px;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	visibility: visible;
 	left: 0px;
 }
@@ -177,16 +146,15 @@ body{
 }
 .header-con{
 	visibility: visible;
+	position: fixed;
 }
-.header-con img{
-	visibility: hidden;
-}
+
 .header-con h4{
 	visibility: hidden;
 }
 .menu-bar{
 	visibility: visible;
-	position: absolute;
+	position: fixed;
 	top: 48px;
 	right: 3px;
 	margin-top: 6%;
@@ -249,6 +217,41 @@ body{
 }}
 
 </style>
+  </head>
+
+<body onclick="close_fun()">
+	<div class="header-con">
+		<img class="logo" src="https://images-ext-2.discordapp.net/external/UCq7m2CdmGh9IveBdWZk8ZglLspAdCwHIjNPn_4slFk/%3Fsize%3D1024/https/cdn.discordapp.com/icons/947443790053015623/3d3d8cb1823a4a69cc5cd2014c6f6a95.png?width=461&height=461">
+		<h4>Spruce Bot</h4></div>
+		<ul class="nav-list">
+			<a href="#" style="text-decoration:none"><li>Home</li></a>
+			<a href="#" style="text-decoration:none"><li>Invite</li></a>
+			<a href="#" style="text-decoration:none"><li>Docs</li></a>
+			<a href="#" style="text-decoration:none"><li>T&C</li></a>
+			<a href="#" style="text-decoration:none"><li>Donate</li></a>
+			<a href="#" style="text-decoration:none"><li>Support</li></a>
+			<a href="#" style="text-decoration:none"><li>Privacy</li></a>
+			<a href="#" style="text-decoration:none"><li>Bug Report</li></a>
+		</ul>
+
+		<i id="menu-btn" onclick="menu_toggle()" class='bx bx-menu'></i>
+		<ul id ="menubar" class="menu-bar"><b>
+			<a href="#" style="text-decoration:none"><li>Home</li></a>
+			<a href="#" style="text-decoration:none"><li>Invite</li></a>
+			<a href="#" style="text-decoration:none"><li>Docs</li></a>
+			<a href="#" style="text-decoration:none"><li>T&C</li></a>
+			<a href="#" style="text-decoration:none"><li>Donate</li></a>
+			<a href="#" style="text-decoration:none"><li>Support</li></a>
+			<a href="#" style="text-decoration:none"><li>Privacy</li></a>
+			<a href="#" style="text-decoration:none"><li>Bug Report</li></a>
+		</ul>
+		<section class="home-section">
+			
+
+
+		</section>
+
+
 <script type="text/javascript">
 	var menu_bar = document.getElementById("menubar");
 	count = 0
@@ -264,10 +267,6 @@ body{
 			count = 0
 		}
 	}
-
-
-
-
 
 
 </script>
