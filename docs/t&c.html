@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <title>Spruce | T&C</title>
@@ -76,28 +77,33 @@
       
   <!--Site verification-->
   <meta name="google-site-verification" content="google7bf6840903bc8666"/>
-  
-   </head>
+  </head>
 
-<body>
+<body onclick="close_fun()">
 	<div class="header-con">
 		<img class="logo" src="https://images-ext-2.discordapp.net/external/UCq7m2CdmGh9IveBdWZk8ZglLspAdCwHIjNPn_4slFk/%3Fsize%3D1024/https/cdn.discordapp.com/icons/947443790053015623/3d3d8cb1823a4a69cc5cd2014c6f6a95.png?width=461&height=461">
-		<h4>Spruce</h4></div>
+		<h4>Spruce Bot</h4></div>
 		<ul class="nav-list">
 			<a href="#" style="text-decoration:none"><li>Home</li></a>
+			<a href="#" style="text-decoration:none"><li>Invite</li></a>
 			<a href="#" style="text-decoration:none"><li>Docs</li></a>
 			<a href="#" style="text-decoration:none"><li>T&C</li></a>
+			<a href="#" style="text-decoration:none"><li>Donate</li></a>
 			<a href="#" style="text-decoration:none"><li>Support</li></a>
 			<a href="#" style="text-decoration:none"><li>Privacy</li></a>
+			<a href="#" style="text-decoration:none"><li>Bug Report</li></a>
 		</ul>
 
 		<i id="menu-btn" onclick="menu_toggle()" class='bx bx-menu'></i>
-		<ul id ="menubar" class="menu-bar">
+		<ul id ="menubar" class="menu-bar"><b>
 			<a href="#" style="text-decoration:none"><li>Home</li></a>
+			<a href="#" style="text-decoration:none"><li>Invite</li></a>
 			<a href="#" style="text-decoration:none"><li>Docs</li></a>
 			<a href="#" style="text-decoration:none"><li>T&C</li></a>
+			<a href="#" style="text-decoration:none"><li>Donate</li></a>
 			<a href="#" style="text-decoration:none"><li>Support</li></a>
 			<a href="#" style="text-decoration:none"><li>Privacy</li></a>
+			<a href="#" style="text-decoration:none"><li>Bug Report</li></a>
 		</ul>
 
 
@@ -112,7 +118,7 @@ body{
 
 @media(min-width:551px){
 .header-con{
-	background: linear-gradient(#9198e5, #202c45);
+	background: linear-gradient(#383161, #202c45);
 	height: 50px;
 	width: 100%;
 	position: absolute;
@@ -120,6 +126,9 @@ body{
 	left: 0px;
 }
 .menu-bar{
+	visibility: hidden;
+}
+.menu-bar li{
 	visibility: hidden;
 }
 .header-con .logo{
@@ -147,7 +156,6 @@ body{
   right: 10px;
   text-align: center;
   padding-top: 10px;
-  background: transparent;
 }
 .nav-list li{
 	margin-right: 20px;
@@ -157,7 +165,7 @@ body{
 }
 .nav-list li:hover {
   text-decoration: underline;
-  color: #c5e3ca;
+  color: cyan;
 
 }}
 
@@ -181,7 +189,11 @@ body{
 	position: absolute;
 	top: 48px;
 	right: 3px;
+	margin-top: 6%;
 	visibility:hidden;
+	height: 100%;
+	background:#0d001a;
+	border-radius: 5px;
 }
 #menu-btn{
 	visibility: visible;
@@ -195,16 +207,22 @@ body{
 .menu-bar li{
 	color: #fff;
 	list-style: none;
-	padding: 2px 2px 2px 2px;
-	background: #78c288;
-	margin: 3px 0px ;
+	padding-top: 8%;
+	margin: 16px 0px ;
 	border-radius: 5px;
 	text-align: center;
-	width: 100px;
+	height: 35px;
+	width: 160px;
+	border-radius: 5px;
+
+}
+.menu-bar li:hover{
+	background: #fff;
+	color: #000;
 }
 
 .header-con{
-	background: linear-gradient(#9198e5, #202c45);
+	background: linear-gradient(#383161, #202c45);
 	height: 50px;
 	width: 100%;
 	position: absolute;
@@ -234,6 +252,9 @@ body{
 <script type="text/javascript">
 	var menu_bar = document.getElementById("menubar");
 	count = 0
+
+
+
 	function menu_toggle(){
 		if(count == 0){
 			menu_bar.style.visibility = "visible";
@@ -243,6 +264,12 @@ body{
 			count = 0
 		}
 	}
+
+
+
+
+
+
 </script>
 </body>
 </html>
