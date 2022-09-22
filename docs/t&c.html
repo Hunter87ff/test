@@ -102,10 +102,9 @@ body{
 }
 .menu-bar{
 	visibility: hidden;
+	display: none;
 }
-.menu-bar li{
-	visibility: hidden;
-}
+
 .header-con .logo{
 	position: fixed;
 	left: 10px;
@@ -147,14 +146,9 @@ body{
 
 
 @media(max-width:550px){
-.nav-list li{
-	visibility: hidden;
+.nav-list{
+	display: none;
 }
-.header-con{
-	visibility: visible;
-	position: absolute;
-}
-
 .header-con h4{
 	visibility: hidden;
 }
@@ -202,7 +196,7 @@ body{
 	position: fixed;
 	visibility: visible;
 	left: 0px;
-	top: 0px;
+	top: -2px;
 }
 .header-con img{
 	position: fixed;
@@ -221,7 +215,12 @@ body{
 	overflow: none;
 	color: #fff;
 	visibility: visible;
-}}
+}
+  .header-con{
+	margin-top: 2px;
+}
+  
+}
 
 </style>
   </head>
@@ -253,10 +252,11 @@ body{
 			<a href="#" style="text-decoration:none"><li>Bug Report</li></a>
 		</ul>
 		<section class="home-section">
+
 <h1>Privacy Policy</h1>
 <p>Last updated: September 22, 2022</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
-<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.termsfeed.com/privacy-policy-generator/" target="_blank">TermsFeed Privacy Policy Generator</a>.</p>
+<p>We do not use Your Personal data to provide and improve the Service, normally we use a little amount of AI to improve the user Experience. 
 <h1>Interpretation and Definitions</h1>
 <h2>Interpretation</h2>
 <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
@@ -426,6 +426,7 @@ body{
 <ul>
 <li>By visiting this page on our website: <a href="https://discord.gg/vMnhpAyFZm" rel="external nofollow noopener" target="_blank">https://discord.gg/vMnhpAyFZm</a></li>
 </ul>
+
 
 
 		</section>
